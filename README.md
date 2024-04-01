@@ -6,7 +6,7 @@ gradle build run
 ```
 # Test commands
 ```
-curl http://localhost:8080/hello/
+curl http://localhost:8080/hello
 curl http://localhost:8080/hello/World
 curl http://localhost:8080/hello/Prashant
 ```
