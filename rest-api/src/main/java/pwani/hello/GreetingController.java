@@ -14,7 +14,6 @@ public class GreetingController {
     GreetingService greetingService;
     @GetMapping("/hello")
     public GreetingMessageDTO greet(){
-        System.out.println("Inside the greet method");
         return greet("");
     }
     @GetMapping("/hello/{name}")
