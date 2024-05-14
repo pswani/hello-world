@@ -20,7 +20,6 @@ public class GreetingController {
     public GreetingMessageDTO greet(@PathVariable String name){
         GreetingVO greetingVO = greetingService.greet(new GreetingCommand(name));
         GreetingMessageDTO dto = new GreetingMessageDTO(greetingVO);
-        System.out.println("Got a call for "+name);
         return dto;
     }
 }
