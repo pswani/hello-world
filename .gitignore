@@ -6,7 +6,7 @@ build
 **/.buildSrc
 
 #Exclude the ddd-framework project from commiting to the repo
-ddd-framework/
+/ddd-framework/
 
 # Compiled class file
 *.class
