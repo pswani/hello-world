@@ -2,6 +2,7 @@
 ```
 git clone git@github.com:pswani/hello-world.git
 cd hello-world
+git clone git@github.com:pswani/ddd-framework.git
 gradle build run
 ```
 # Test commands
