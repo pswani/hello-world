@@ -1,15 +1,8 @@
 
 plugins {
-    id("java")
-}
-
-repositories {
-    mavenCentral()
+    id("pwani.java-library-conventions")
 }
 
 dependencies{
     implementation("org.apache.commons:commons-lang3:3.14.0")
-
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.2")
-
 }

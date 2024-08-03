@@ -3,15 +3,15 @@ package pwani.ddd.framework.implementation;
 import pwani.ddd.framework.core.Identity;
 
 public class NumberId implements Identity<NumberId> {
-    private static int nextId = 1;
+    private static long nextId = 1;
 
     public static NumberId nextId() {
         return new NumberId(nextId++);
     }
 
-    private final int id;
+    private final long id;
 
-    public NumberId(int id) {
+    public NumberId(long id) {
         if(id <= 0)
             throw new IllegalArgumentException(String.format("Invalid Id: %s", id));
         this.id = id;
@@ -31,7 +31,7 @@ public class NumberId implements Identity<NumberId> {
         return new NumberId(this.id);
     }
 
-    public int value(){
+    public long value(){
         return id;
     }
 }
